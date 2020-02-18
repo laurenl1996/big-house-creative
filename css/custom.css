@@ -33,35 +33,6 @@ h3{
   border-radius:20px;
 }
 
-.reveal{
-  width:80%;   
-}
-
-.reveal ul {
-  border: none;
-}
-
-.reveal li {
-  list-style: none;      
-}
-
-.reveal span{
-  color:#6191cc;
-  font-weight:900;
-}
-
-.tabs-title > a{
-    font-size:18px;
-    text-decoration: none;
-    border-left: 1px solid;
-    border-right: 1px solid;
-}
-
-.tabs{
-    margin: 10px 27% 0 27%;
-  border: none;
-  width: 46%;
-}
 
 
 
