@@ -50,5 +50,18 @@ h3{
   font-weight:900;
 }
 
+.tabs-title > a{
+    font-size:18px;
+    text-decoration: none;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.tabs{
+    margin: 10px 27% 0 27%;
+  border: none;
+  width: 46%;
+}
+
 
 
