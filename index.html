@@ -1,0 +1,604 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Timeline</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+       <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+      <!-- Javascript -->
+       <script>
+        $('#sortable').sortable({
+        axis: 'x',
+        });
+      </script>
+      
+      
+  </head>
+<body>
+
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+         <!-- H1 tag -->
+        </div>
+      </div>
+        
+        <br>
+        
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <div class="callout">
+              
+              <div class="titlediv">
+                    <div class="divider"></div>
+                        <h4 class="title">Living Legacies Timeline</h4>
+              </div>
+              <br>
+              <h3>Start your journey</h3>
+              <br>
+              <p>A timeline of America's Wars. Since America united as one nation, this great country surrendered its bravest to liberate the oppressed and ensure freedom for its citizens and future generations. Battle lines were drawn and blood was spilled on U.S. soil and foreign lands. Listed below are the sacrifices made in America’s wars.</p>
+
+<section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
+
+    <div class="cd-h-timeline__container container">
+      <div class="cd-h-timeline__dates">
+        <div class="cd-h-timeline__line">
+          <ol>
+            <li><a href="#0" data-date="19/04/1775" class="cd-h-timeline__date cd-h-timeline__date--selected">April 1775</a></li>
+            <li><a href="#0" data-date="18/06/1812" class="cd-h-timeline__date">June 1812</a></li>
+            <li><a href="#0" data-date="25/04/1846" class="cd-h-timeline__date">April 1846</a></li>
+            <li><a href="#0" data-date="12/04/1861" class="cd-h-timeline__date">April 1861</a></li>
+            <li><a href="#0" data-date="21/04/1898" class="cd-h-timeline__date">April 1898</a></li>
+            <li><a href="#0" data-date="28/07/1914" class="cd-h-timeline__date">July 1914</a></li>
+            <li><a href="#0" data-date="01/09/1939" class="cd-h-timeline__date">Sept 1939</a></li>
+          </ol>
+
+          <span class="cd-h-timeline__filling-line" aria-hidden="true"></span>
+        </div> <!-- .cd-h-timeline__line -->
+      </div> <!-- .cd-h-timeline__dates -->
+        
+      <ul>
+        <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">Prev</a></li>
+        <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">Next</a></li>
+      </ul>
+    </div> <!-- .cd-h-timeline__container -->
+                  
+ 
+    <div class="cd-h-timeline__events">
+        
+      <ol>
+          <!--1. American Revolution -->
+        <li class="cd-h-timeline__event cd-h-timeline__event--selected text-component" >
+          <div class="cd-h-timeline__event-content container">
+            <h2 class="cd-h-timeline__event-title">American Revolution</h2>
+                <em class="cd-h-timeline__event-date">April 19th, 1775</em>
+                    <p class="cd-h-timeline__event-description color-contrast-medium"> 
+                        <a data-open="reveal_modal"><img class="timeline-img" src="assets/img/american-revolution.jpg"></a>
+                    </p>
+          </div>
+            
+            <!-- The Modal -->
+          <div class = "reveal" id = "reveal_modal" data-reveal>
+            <a style="float:right; margin:0 5% 0;" data-open="reveal_modal2">War of 1812 &#8594;</a>
+              <br>
+            <h2>American Revolution</h2>
+                <ul class="tabs" data-active-collapse="true" data-tabs id="example-tabs">
+                    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Highlights</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Projects</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">Outreach</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel4" href="#panel4">Events</a></li>
+                </ul>
+                
+          <div class="tabs-content" data-tabs-content="example-tabs">
+                <div class="tabs-panel is-active" id="panel1">
+                    <ul>
+                        <li><span>Dates:</span> 1775 - 1783</li>
+                        <li><span>Where?:</span> Eastern seaboard of North America</li>
+                        <li><span>How It Ended:</span> The Treaty of Paris was signed on Sept. 3, 1783</li>
+                            <li><span>American Casualties:</span> 4,435 (approx.);</li>
+                        <li>Approx. 217,000 served</li>
+                    </ul>
+
+               </div>
+              
+         <div class="tabs-panel" id="panel2">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel maximus ante. Proin commodo congue ipsum. Curabitur mauris quam, fringilla eu egestas quis, rhoncus nec magna. Praesent neque dolor, placerat ut est at, mattis laoreet justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc metus dolor, interdum eu tellus vitae, imperdiet sollicitudin tellus. Nam eget metus et lorem condimentum vulputate varius eget tellus. Donec ac tincidunt turpis, nec aliquam urna. Donec malesuada tellus sit amet vulputate varius. Morbi eu ultrices urna. Sed aliquam magna risus, ut volutpat massa aliquam sed. Suspendisse a bibendum tellus. Nulla et lacus metus.</p>
+                    
+             <img src="assets/img/american-revolution.jpg">
+                        
+                <p>In a est dolor. Cras sodales libero ac diam porta, semper scelerisque eros tristique. Etiam ut libero et odio aliquet maximus dignissim nec risus. Vivamus non dapibus turpis. Mauris blandit massa ac dolor sagittis, vehicula malesuada elit hendrerit. Phasellus nec lectus vel nisi aliquam imperdiet. Nullam id metus non lacus maximus condimentum. Donec auctor odio tortor, in finibus odio bibendum in. Phasellus quis leo id erat pellentesque vulputate. Sed dignissim, eros eget interdum pulvinar, nunc quam elementum tellus, id pharetra est velit non mi. Etiam nec sem at justo maximus vestibulum. Nunc auctor dictum congue. Integer posuere massa vel malesuada porttitor. Sed elementum condimentum libero, eget tempor ante auctor ut.</p>
+         </div>
+                
+        <div class="tabs-panel" id="panel3">
+                <p>Donec sollicitudin odio nec efficitur sollicitudin. Nullam luctus ultricies pharetra. Maecenas ornare purus id accumsan vehicula. Suspendisse accumsan rutrum felis a fringilla. Vestibulum sed elit aliquam, pellentesque enim vel, auctor diam. Aliquam volutpat feugiat dui vulputate vestibulum. Nulla bibendum tincidunt ex, et sodales nibh molestie quis. Duis at tortor nulla. Mauris viverra sed ante et aliquam. Pellentesque commodo gravida tortor in fermentum. Morbi condimentum nunc et posuere consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam turpis mi, bibendum vitae blandit et, cursus sit amet leo. Nunc ornare luctus pellentesque. In quis condimentum mauris, in facilisis ligula.</p>
+        </div>
+                
+        <div class="tabs-panel" id="panel4">
+                <p>Aliquam dui ante, consectetur vel ornare ac, consequat hendrerit enim. Vestibulum fermentum placerat mauris et fermentum. Quisque varius odio et finibus fermentum. Donec non ante non metus consectetur rutrum. Curabitur blandit, odio vitae rhoncus vulputate, nisl risus fermentum enim, laoreet mollis enim massa at purus. Duis vel nisl egestas, sodales nunc in, ullamcorper dui. Phasellus ut elementum odio, quis venenatis mauris. Ut consectetur a ex quis mattis. Sed mattis tristique ex, a faucibus libero interdum nec. Duis velit orci, suscipit ut mattis vitae, placerat eu velit. In lobortis malesuada nibh. Duis finibus sed nisl eu pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam laoreet ut felis eu ornare. Integer suscipit massa pulvinar arcu feugiat, ut rhoncus ipsum pellentesque. Quisque tempus lobortis massa eu molestie.</p>
+        </div>
+        </div>
+                
+        <button class = "close-button" data-close aria-label = "Close reveal" type = "button">
+            <span aria-hidden = "true">×</span>
+         </button>
+      </div>
+    </li>
+        <!--1. American Revolution End -->
+          
+        <!--2. War of 1812 -->
+        <li class="cd-h-timeline__event text-component" >
+          <div class="cd-h-timeline__event-content container">
+            <h2 class="cd-h-timeline__event-title">War of 1812</h2>
+            <em class="cd-h-timeline__event-date">April 18th, 1812</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal2"><img class="timeline-img" src="assets/img/warof1812.jpg"></a>
+            </p>
+          </div>
+            
+            
+            <!-- The Modal -->
+          <div class = "reveal" id = "reveal_modal2" data-reveal>
+            <a style="float:left; margin:0 0 0 2%;" data-open="reveal_modal">&#8592; American Revolution</a>
+            <a style="float:right; margin:0 5% 0;" data-open="reveal_modal3">Mexican War &#8594;</a>
+              <br>
+            <h2>War of 1812</h2>
+                <ul class="tabs" data-active-collapse="true" data-tabs id="example-tabs">
+                    <li class="tabs-title is-active"><a href="#panel5" aria-selected="true">Highlights</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel6" href="#panel2">Projects</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel7" href="#panel3">Outreach</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel8" href="#panel4">Events</a></li>
+                </ul>
+                
+          <div class="tabs-content" data-tabs-content="example-tabs">
+                <div class="tabs-panel is-active" id="panel5">
+                    <ul>
+                        <li><span>Dates:</span> 1812 – 1815</li>
+                        <li><span>Where?:</span> Canada, Eastern seaboard of the United States, Great Lakes and Lake Champlain</li>
+                        <li><span>How It Ended:</span> The Treaty of Ghent was signed on Dec. 24, 1814. Unaware of the treaty, Gen. Andrew Jackson engaged and crushed the British at New Orleans on January 8, 1815.<li>
+                            <li><span>American Casualties:</span> 2,260 (approx.)</li>
+                        <li>Approx. 286,730 served</li>
+                    </ul>
+
+               </div>
+              
+         <div class="tabs-panel" id="panel6">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel maximus ante. Proin commodo congue ipsum. Curabitur mauris quam, fringilla eu egestas quis, rhoncus nec magna. Praesent neque dolor, placerat ut est at, mattis laoreet justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc metus dolor, interdum eu tellus vitae, imperdiet sollicitudin tellus. Nam eget metus et lorem condimentum vulputate varius eget tellus. Donec ac tincidunt turpis, nec aliquam urna. Donec malesuada tellus sit amet vulputate varius. Morbi eu ultrices urna. Sed aliquam magna risus, ut volutpat massa aliquam sed. Suspendisse a bibendum tellus. Nulla et lacus metus.</p>
+                    
+             <img src="assets/img/warof1812.jpg">
+                        
+                <p>In a est dolor. Cras sodales libero ac diam porta, semper scelerisque eros tristique. Etiam ut libero et odio aliquet maximus dignissim nec risus. Vivamus non dapibus turpis. Mauris blandit massa ac dolor sagittis, vehicula malesuada elit hendrerit. Phasellus nec lectus vel nisi aliquam imperdiet. Nullam id metus non lacus maximus condimentum. Donec auctor odio tortor, in finibus odio bibendum in. Phasellus quis leo id erat pellentesque vulputate. Sed dignissim, eros eget interdum pulvinar, nunc quam elementum tellus, id pharetra est velit non mi. Etiam nec sem at justo maximus vestibulum. Nunc auctor dictum congue. Integer posuere massa vel malesuada porttitor. Sed elementum condimentum libero, eget tempor ante auctor ut.</p>
+         </div>
+                
+        <div class="tabs-panel" id="panel7">
+                <p>Donec sollicitudin odio nec efficitur sollicitudin. Nullam luctus ultricies pharetra. Maecenas ornare purus id accumsan vehicula. Suspendisse accumsan rutrum felis a fringilla. Vestibulum sed elit aliquam, pellentesque enim vel, auctor diam. Aliquam volutpat feugiat dui vulputate vestibulum. Nulla bibendum tincidunt ex, et sodales nibh molestie quis. Duis at tortor nulla. Mauris viverra sed ante et aliquam. Pellentesque commodo gravida tortor in fermentum. Morbi condimentum nunc et posuere consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam turpis mi, bibendum vitae blandit et, cursus sit amet leo. Nunc ornare luctus pellentesque. In quis condimentum mauris, in facilisis ligula.</p>
+        </div>
+                
+        <div class="tabs-panel" id="panel8">
+                <p>Aliquam dui ante, consectetur vel ornare ac, consequat hendrerit enim. Vestibulum fermentum placerat mauris et fermentum. Quisque varius odio et finibus fermentum. Donec non ante non metus consectetur rutrum. Curabitur blandit, odio vitae rhoncus vulputate, nisl risus fermentum enim, laoreet mollis enim massa at purus. Duis vel nisl egestas, sodales nunc in, ullamcorper dui. Phasellus ut elementum odio, quis venenatis mauris. Ut consectetur a ex quis mattis. Sed mattis tristique ex, a faucibus libero interdum nec. Duis velit orci, suscipit ut mattis vitae, placerat eu velit. In lobortis malesuada nibh. Duis finibus sed nisl eu pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam laoreet ut felis eu ornare. Integer suscipit massa pulvinar arcu feugiat, ut rhoncus ipsum pellentesque. Quisque tempus lobortis massa eu molestie.</p>
+        </div>
+        </div>
+                
+        <button class = "close-button" data-close aria-label = "Close reveal" type = "button">
+            <span aria-hidden = "true">×</span>
+         </button>
+      </div>
+        </li>
+          
+        <!--2. War of 1812 End-->
+          
+        <!--3. Mexican War-->
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h2 class="cd-h-timeline__event-title">Mexican War</h2>
+            <em class="cd-h-timeline__event-date">April 15th, 1846</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal3"><img class="timeline-img" src="assets/img/Overview-Mexican-American-War.jpg"></a>
+            </p>
+          </div>
+            
+            <!-- The Modal -->
+          <div class = "reveal" id = "reveal_modal3" data-reveal>
+            <a style="float:left; margin:0 0 0 2%;" data-open="reveal_modal2">&#8592; War of 1812</a>
+            <a style="float:right; margin:0 5% 0;" data-open="reveal_modal4">Civil War &#8594;</a>
+              <br>
+            <h2>Mexican War</h2>
+                <ul class="tabs" data-active-collapse="true" data-tabs id="example-tabs">
+                    <li class="tabs-title is-active"><a href="#panel9" aria-selected="true">Highlights</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel10" href="#panel2">Projects</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel11" href="#panel3">Outreach</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel12" href="#panel4">Events</a></li>
+                </ul>
+                
+          <div class="tabs-content" data-tabs-content="example-tabs">
+                <div class="tabs-panel is-active" id="panel9">
+                    <ul>
+                        <li><span>Dates:</span> 1846 – 1848</li>
+                        <li><span>Where?:</span> Mexico and southwestern United States, including modern-day Texas, California and New Mexico</li>
+                        <li><span>How It Ended:</span> The Treaty of Guadalupe Hidalgo was signed on Feb. 2, 1848.<li>
+                            <li><span>American Casualties:</span> 13,283 (approx.)</li>
+                        <li>Approx. 78,718 served; 1,733 battle deaths; 11,550 other service deaths</li>
+                    </ul>
+
+               </div>
+              
+         <div class="tabs-panel" id="panel10">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel maximus ante. Proin commodo congue ipsum. Curabitur mauris quam, fringilla eu egestas quis, rhoncus nec magna. Praesent neque dolor, placerat ut est at, mattis laoreet justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc metus dolor, interdum eu tellus vitae, imperdiet sollicitudin tellus. Nam eget metus et lorem condimentum vulputate varius eget tellus. Donec ac tincidunt turpis, nec aliquam urna. Donec malesuada tellus sit amet vulputate varius. Morbi eu ultrices urna. Sed aliquam magna risus, ut volutpat massa aliquam sed. Suspendisse a bibendum tellus. Nulla et lacus metus.</p>
+                    
+             <img src="assets/img/Overview-Mexican-American-War.jpg">
+                        
+                <p>In a est dolor. Cras sodales libero ac diam porta, semper scelerisque eros tristique. Etiam ut libero et odio aliquet maximus dignissim nec risus. Vivamus non dapibus turpis. Mauris blandit massa ac dolor sagittis, vehicula malesuada elit hendrerit. Phasellus nec lectus vel nisi aliquam imperdiet. Nullam id metus non lacus maximus condimentum. Donec auctor odio tortor, in finibus odio bibendum in. Phasellus quis leo id erat pellentesque vulputate. Sed dignissim, eros eget interdum pulvinar, nunc quam elementum tellus, id pharetra est velit non mi. Etiam nec sem at justo maximus vestibulum. Nunc auctor dictum congue. Integer posuere massa vel malesuada porttitor. Sed elementum condimentum libero, eget tempor ante auctor ut.</p>
+         </div>
+                
+        <div class="tabs-panel" id="panel11">
+                <p>Donec sollicitudin odio nec efficitur sollicitudin. Nullam luctus ultricies pharetra. Maecenas ornare purus id accumsan vehicula. Suspendisse accumsan rutrum felis a fringilla. Vestibulum sed elit aliquam, pellentesque enim vel, auctor diam. Aliquam volutpat feugiat dui vulputate vestibulum. Nulla bibendum tincidunt ex, et sodales nibh molestie quis. Duis at tortor nulla. Mauris viverra sed ante et aliquam. Pellentesque commodo gravida tortor in fermentum. Morbi condimentum nunc et posuere consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam turpis mi, bibendum vitae blandit et, cursus sit amet leo. Nunc ornare luctus pellentesque. In quis condimentum mauris, in facilisis ligula.</p>
+        </div>
+                
+        <div class="tabs-panel" id="panel12">
+                <p>Aliquam dui ante, consectetur vel ornare ac, consequat hendrerit enim. Vestibulum fermentum placerat mauris et fermentum. Quisque varius odio et finibus fermentum. Donec non ante non metus consectetur rutrum. Curabitur blandit, odio vitae rhoncus vulputate, nisl risus fermentum enim, laoreet mollis enim massa at purus. Duis vel nisl egestas, sodales nunc in, ullamcorper dui. Phasellus ut elementum odio, quis venenatis mauris. Ut consectetur a ex quis mattis. Sed mattis tristique ex, a faucibus libero interdum nec. Duis velit orci, suscipit ut mattis vitae, placerat eu velit. In lobortis malesuada nibh. Duis finibus sed nisl eu pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam laoreet ut felis eu ornare. Integer suscipit massa pulvinar arcu feugiat, ut rhoncus ipsum pellentesque. Quisque tempus lobortis massa eu molestie.</p>
+        </div>
+        </div>
+                
+        <button class = "close-button" data-close aria-label = "Close reveal" type = "button">
+            <span aria-hidden = "true">×</span>
+         </button>
+      </div>
+            
+        </li>
+          
+          <!-- 3. Mexican War End-->
+          
+          <!-- 4. Civil War -->
+          
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h2 class="cd-h-timeline__event-title">Civil War</h2>
+            <em class="cd-h-timeline__event-date">April 12th, 1861</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal4"><img class="timeline-img" src="assets/img/civilwar.jpg"></a>
+            </p>
+          </div>
+            
+            <!-- The Modal -->
+          <div class = "reveal" id = "reveal_modal4" data-reveal>
+            <a style="float:left; margin:0 0 0 2%;" data-open="reveal_modal3">&#8592; Mexican War</a>
+            <a style="float:right; margin:0 5% 0;" data-open="reveal_modal5">Spanish-American War &#8594;</a>
+              <br>
+            <h2>Civil War</h2>
+                <ul class="tabs" data-active-collapse="true" data-tabs id="example-tabs">
+                    <li class="tabs-title is-active"><a href="#panel13" aria-selected="true">Highlights</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel14" href="#panel2">Projects</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel15" href="#panel3">Outreach</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel16" href="#panel4">Events</a></li>
+                </ul>
+                
+          <div class="tabs-content" data-tabs-content="example-tabs">
+                <div class="tabs-panel is-active" id="panel13">
+                    <ul>
+                        <li><span>Dates:</span> 1861 – 1865</li>
+                        <li><span>Where?:</span> Primarily in the Eastern half of the United States (east of the Mississippi River)</li>
+                        <li><span>How It Ended:</span> Robert E. Lee surrendered to Ulysses S. Grant at the small settlement of Appomattox Court House in southwestern Virginia on April 9, 1865.<li>
+                            <li><span>American Casualties:</span> Union forces 646,512 and Confederate forces 133,821 (approx.)</li>
+                        <li>Union Service 2,213,363; battle deaths 140,414; other service deaths 224,097, Confederate Service 1,500,000; battle deaths 74,524; other service deaths 59,297</li>
+                    </ul>
+
+               </div>
+              
+         <div class="tabs-panel" id="panel14">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel maximus ante. Proin commodo congue ipsum. Curabitur mauris quam, fringilla eu egestas quis, rhoncus nec magna. Praesent neque dolor, placerat ut est at, mattis laoreet justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc metus dolor, interdum eu tellus vitae, imperdiet sollicitudin tellus. Nam eget metus et lorem condimentum vulputate varius eget tellus. Donec ac tincidunt turpis, nec aliquam urna. Donec malesuada tellus sit amet vulputate varius. Morbi eu ultrices urna. Sed aliquam magna risus, ut volutpat massa aliquam sed. Suspendisse a bibendum tellus. Nulla et lacus metus.</p>
+                    
+             <img src="assets/img/civilwar.jpg">
+                        
+                <p>In a est dolor. Cras sodales libero ac diam porta, semper scelerisque eros tristique. Etiam ut libero et odio aliquet maximus dignissim nec risus. Vivamus non dapibus turpis. Mauris blandit massa ac dolor sagittis, vehicula malesuada elit hendrerit. Phasellus nec lectus vel nisi aliquam imperdiet. Nullam id metus non lacus maximus condimentum. Donec auctor odio tortor, in finibus odio bibendum in. Phasellus quis leo id erat pellentesque vulputate. Sed dignissim, eros eget interdum pulvinar, nunc quam elementum tellus, id pharetra est velit non mi. Etiam nec sem at justo maximus vestibulum. Nunc auctor dictum congue. Integer posuere massa vel malesuada porttitor. Sed elementum condimentum libero, eget tempor ante auctor ut.</p>
+         </div>
+                
+        <div class="tabs-panel" id="panel15">
+                <p>Donec sollicitudin odio nec efficitur sollicitudin. Nullam luctus ultricies pharetra. Maecenas ornare purus id accumsan vehicula. Suspendisse accumsan rutrum felis a fringilla. Vestibulum sed elit aliquam, pellentesque enim vel, auctor diam. Aliquam volutpat feugiat dui vulputate vestibulum. Nulla bibendum tincidunt ex, et sodales nibh molestie quis. Duis at tortor nulla. Mauris viverra sed ante et aliquam. Pellentesque commodo gravida tortor in fermentum. Morbi condimentum nunc et posuere consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam turpis mi, bibendum vitae blandit et, cursus sit amet leo. Nunc ornare luctus pellentesque. In quis condimentum mauris, in facilisis ligula.</p>
+        </div>
+                
+        <div class="tabs-panel" id="panel16">
+                <p>Aliquam dui ante, consectetur vel ornare ac, consequat hendrerit enim. Vestibulum fermentum placerat mauris et fermentum. Quisque varius odio et finibus fermentum. Donec non ante non metus consectetur rutrum. Curabitur blandit, odio vitae rhoncus vulputate, nisl risus fermentum enim, laoreet mollis enim massa at purus. Duis vel nisl egestas, sodales nunc in, ullamcorper dui. Phasellus ut elementum odio, quis venenatis mauris. Ut consectetur a ex quis mattis. Sed mattis tristique ex, a faucibus libero interdum nec. Duis velit orci, suscipit ut mattis vitae, placerat eu velit. In lobortis malesuada nibh. Duis finibus sed nisl eu pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam laoreet ut felis eu ornare. Integer suscipit massa pulvinar arcu feugiat, ut rhoncus ipsum pellentesque. Quisque tempus lobortis massa eu molestie.</p>
+        </div>
+        </div>
+                
+        <button class = "close-button" data-close aria-label = "Close reveal" type = "button">
+            <span aria-hidden = "true">×</span>
+         </button>
+      </div>
+            
+        </li>
+          
+          <!-- 4. Civil War End -->
+          
+          <!-- 5. Spanish American War -->
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h2 class="cd-h-timeline__event-title">Spanish-American War</h2>
+            <em class="cd-h-timeline__event-date">April 21st, 1898</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal5"><img class="timeline-img" src="assets/img/spanish-american-war.jpg"></a>
+            </p>
+          </div>
+            
+            <!-- The Modal -->
+          <div class = "reveal" id = "reveal_modal5" data-reveal>
+            <a style="float:left; margin:0 0 0 2%;" data-open="reveal_modal4">&#8592; Civil War</a>
+            <a style="float:right; margin:0 5% 0;" data-open="reveal_modal6">World War I &#8594;</a>
+              <br>
+            <h2>Spanish-American War</h2>
+                <ul class="tabs" data-active-collapse="true" data-tabs id="example-tabs">
+                    <li class="tabs-title is-active"><a href="#panel17" aria-selected="true">Highlights</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel18" href="#panel2">Projects</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel19" href="#panel3">Outreach</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel20" href="#panel4">Events</a></li>
+                </ul>
+                
+          <div class="tabs-content" data-tabs-content="example-tabs">
+                <div class="tabs-panel is-active" id="panel17">
+                    <ul>
+                        <li><span>Dates:</span> April 25 – Aug. 12, 1898</li>
+                        <li><span>Where?:</span> Mainly in the Spanish possessions of Cuba and the Philippines</li>
+                        <li><span>How It Ended:</span> The Treaty of Paris was signed on Dec. 10, 1898.<li>
+                            <li><span>American Casualties:</span> 2,446 (approx.)</li>
+                        <li>Service 306,760 worldwide; battle deaths 385; Other deaths in service 2,061</li>
+                    </ul>
+
+               </div>
+              
+         <div class="tabs-panel" id="panel18">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel maximus ante. Proin commodo congue ipsum. Curabitur mauris quam, fringilla eu egestas quis, rhoncus nec magna. Praesent neque dolor, placerat ut est at, mattis laoreet justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc metus dolor, interdum eu tellus vitae, imperdiet sollicitudin tellus. Nam eget metus et lorem condimentum vulputate varius eget tellus. Donec ac tincidunt turpis, nec aliquam urna. Donec malesuada tellus sit amet vulputate varius. Morbi eu ultrices urna. Sed aliquam magna risus, ut volutpat massa aliquam sed. Suspendisse a bibendum tellus. Nulla et lacus metus.</p>
+                    
+             <img src="assets/img/spanish-american-war.jpg">
+                        
+                <p>In a est dolor. Cras sodales libero ac diam porta, semper scelerisque eros tristique. Etiam ut libero et odio aliquet maximus dignissim nec risus. Vivamus non dapibus turpis. Mauris blandit massa ac dolor sagittis, vehicula malesuada elit hendrerit. Phasellus nec lectus vel nisi aliquam imperdiet. Nullam id metus non lacus maximus condimentum. Donec auctor odio tortor, in finibus odio bibendum in. Phasellus quis leo id erat pellentesque vulputate. Sed dignissim, eros eget interdum pulvinar, nunc quam elementum tellus, id pharetra est velit non mi. Etiam nec sem at justo maximus vestibulum. Nunc auctor dictum congue. Integer posuere massa vel malesuada porttitor. Sed elementum condimentum libero, eget tempor ante auctor ut.</p>
+         </div>
+                
+        <div class="tabs-panel" id="panel19">
+                <p>Donec sollicitudin odio nec efficitur sollicitudin. Nullam luctus ultricies pharetra. Maecenas ornare purus id accumsan vehicula. Suspendisse accumsan rutrum felis a fringilla. Vestibulum sed elit aliquam, pellentesque enim vel, auctor diam. Aliquam volutpat feugiat dui vulputate vestibulum. Nulla bibendum tincidunt ex, et sodales nibh molestie quis. Duis at tortor nulla. Mauris viverra sed ante et aliquam. Pellentesque commodo gravida tortor in fermentum. Morbi condimentum nunc et posuere consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam turpis mi, bibendum vitae blandit et, cursus sit amet leo. Nunc ornare luctus pellentesque. In quis condimentum mauris, in facilisis ligula.</p>
+        </div>
+                
+        <div class="tabs-panel" id="panel20">
+                <p>Aliquam dui ante, consectetur vel ornare ac, consequat hendrerit enim. Vestibulum fermentum placerat mauris et fermentum. Quisque varius odio et finibus fermentum. Donec non ante non metus consectetur rutrum. Curabitur blandit, odio vitae rhoncus vulputate, nisl risus fermentum enim, laoreet mollis enim massa at purus. Duis vel nisl egestas, sodales nunc in, ullamcorper dui. Phasellus ut elementum odio, quis venenatis mauris. Ut consectetur a ex quis mattis. Sed mattis tristique ex, a faucibus libero interdum nec. Duis velit orci, suscipit ut mattis vitae, placerat eu velit. In lobortis malesuada nibh. Duis finibus sed nisl eu pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam laoreet ut felis eu ornare. Integer suscipit massa pulvinar arcu feugiat, ut rhoncus ipsum pellentesque. Quisque tempus lobortis massa eu molestie.</p>
+        </div>
+        </div>
+                
+        <button class = "close-button" data-close aria-label = "Close reveal" type = "button">
+            <span aria-hidden = "true">×</span>
+         </button>
+      </div>
+            
+        </li>
+          
+          <!-- 5. Spanish American War End -->
+          
+          <!-- 6. World War I -->
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h2 class="cd-h-timeline__event-title">World War I</h2>
+            <em class="cd-h-timeline__event-date">July 28th 1914</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal6"><img class="timeline-img" src="assets/img/worldwar1.jpg"></a>
+            </p>
+          </div>
+            
+            <!-- The Modal -->
+          <div class = "reveal" id = "reveal_modal6" data-reveal>
+            <a style="float:left; margin:0 0 0 2%;" data-open="reveal_modal5">&#8592; Spanish-American War</a>
+            <a style="float:right; margin:0 5% 0;" data-open="reveal_modal7">World War II &#8594;</a>
+              <br>
+            <h2>World War I</h2>
+                <ul class="tabs" data-active-collapse="true" data-tabs id="example-tabs">
+                    <li class="tabs-title is-active"><a href="#panel21" aria-selected="true">Highlights</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel22" href="#panel2">Projects</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel23" href="#panel3">Outreach</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel24" href="#panel4">Events</a></li>
+                </ul>
+                
+          <div class="tabs-content" data-tabs-content="example-tabs">
+                <div class="tabs-panel is-active" id="panel21">
+                    <ul>
+                        <li><span>Dates:</span> 1914 – 1918</li>
+                        <li><span>Where?:</span> The Atlantic Ocean and Europe</li>
+                        <li><span>How It Ended:</span> Treaty of Versailles was signed on June 28, 1919.<li>
+                        <li><span>American Casualties:</span> 116,708 (approx.)</li>
+                        <li>Worldwide Service 4,734,991; battle deaths 53,402; Other deaths in service 63,114 (non-theater)</li>
+                    </ul>
+
+               </div>
+              
+         <div class="tabs-panel" id="panel22">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel maximus ante. Proin commodo congue ipsum. Curabitur mauris quam, fringilla eu egestas quis, rhoncus nec magna. Praesent neque dolor, placerat ut est at, mattis laoreet justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc metus dolor, interdum eu tellus vitae, imperdiet sollicitudin tellus. Nam eget metus et lorem condimentum vulputate varius eget tellus. Donec ac tincidunt turpis, nec aliquam urna. Donec malesuada tellus sit amet vulputate varius. Morbi eu ultrices urna. Sed aliquam magna risus, ut volutpat massa aliquam sed. Suspendisse a bibendum tellus. Nulla et lacus metus.</p>
+                    
+             <img src="assets/img/worldwar1.jpg">
+                        
+                <p>In a est dolor. Cras sodales libero ac diam porta, semper scelerisque eros tristique. Etiam ut libero et odio aliquet maximus dignissim nec risus. Vivamus non dapibus turpis. Mauris blandit massa ac dolor sagittis, vehicula malesuada elit hendrerit. Phasellus nec lectus vel nisi aliquam imperdiet. Nullam id metus non lacus maximus condimentum. Donec auctor odio tortor, in finibus odio bibendum in. Phasellus quis leo id erat pellentesque vulputate. Sed dignissim, eros eget interdum pulvinar, nunc quam elementum tellus, id pharetra est velit non mi. Etiam nec sem at justo maximus vestibulum. Nunc auctor dictum congue. Integer posuere massa vel malesuada porttitor. Sed elementum condimentum libero, eget tempor ante auctor ut.</p>
+         </div>
+                
+        <div class="tabs-panel" id="panel23">
+                <p>Donec sollicitudin odio nec efficitur sollicitudin. Nullam luctus ultricies pharetra. Maecenas ornare purus id accumsan vehicula. Suspendisse accumsan rutrum felis a fringilla. Vestibulum sed elit aliquam, pellentesque enim vel, auctor diam. Aliquam volutpat feugiat dui vulputate vestibulum. Nulla bibendum tincidunt ex, et sodales nibh molestie quis. Duis at tortor nulla. Mauris viverra sed ante et aliquam. Pellentesque commodo gravida tortor in fermentum. Morbi condimentum nunc et posuere consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam turpis mi, bibendum vitae blandit et, cursus sit amet leo. Nunc ornare luctus pellentesque. In quis condimentum mauris, in facilisis ligula.</p>
+        </div>
+                
+        <div class="tabs-panel" id="panel24">
+                <p>Aliquam dui ante, consectetur vel ornare ac, consequat hendrerit enim. Vestibulum fermentum placerat mauris et fermentum. Quisque varius odio et finibus fermentum. Donec non ante non metus consectetur rutrum. Curabitur blandit, odio vitae rhoncus vulputate, nisl risus fermentum enim, laoreet mollis enim massa at purus. Duis vel nisl egestas, sodales nunc in, ullamcorper dui. Phasellus ut elementum odio, quis venenatis mauris. Ut consectetur a ex quis mattis. Sed mattis tristique ex, a faucibus libero interdum nec. Duis velit orci, suscipit ut mattis vitae, placerat eu velit. In lobortis malesuada nibh. Duis finibus sed nisl eu pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam laoreet ut felis eu ornare. Integer suscipit massa pulvinar arcu feugiat, ut rhoncus ipsum pellentesque. Quisque tempus lobortis massa eu molestie.</p>
+        </div>
+        </div>
+                
+        <button class = "close-button" data-close aria-label = "Close reveal" type = "button">
+            <span aria-hidden = "true">×</span>
+         </button>
+      </div>
+            
+        </li>
+          
+          <!-- 6. World War I End -->
+          
+          <!-- 7. World War II -->
+
+        <li class="cd-h-timeline__event text-component" id="1939">
+          <div class="cd-h-timeline__event-content container">
+            <h2 class="cd-h-timeline__event-title">World War II</h2>
+            <em class="cd-h-timeline__event-date">September 1st, 1939</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal7"><img class="timeline-img" src="assets/img/worldwarII.jpg"></a>
+            </p>
+          </div>
+            
+            <!-- The Modal -->
+          <div class = "reveal" id = "reveal_modal7" data-reveal>
+            <a style="float:left; margin:0 0 0 2%;" data-open="reveal_modal6">&#8592; World War II</a>
+            <br>
+            <h2>World War II</h2>
+                <ul class="tabs" data-active-collapse="true" data-tabs id="example-tabs">
+                    <li class="tabs-title is-active"><a href="#panel25" aria-selected="true">Highlights</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel26" href="#panel2">Projects</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel27" href="#panel3">Outreach</a></li>
+                    <li class="tabs-title"><a data-tabs-target="panel28" href="#panel4">Events</a></li>
+                </ul>
+                
+          <div class="tabs-content" data-tabs-content="example-tabs">
+                <div class="tabs-panel is-active" id="panel25">
+                    <ul>
+                        <li><span>Dates:</span> 1939 – 1945</li>
+                        <li><span>Where?:</span> Europe, North Africa, Asia, Australia, and Pacific islands including Hawaii, Atlantic and Pacific Oceans</li>
+                        <li><span>How It Ended:</span> Japan was the last Axis power to surrender on August 14, 1945, after the U.S. bombing of Hiroshima and Nagasaki<li>
+                        <li><span>American Casualties:</span> 407,316 (approx.)</li>
+                        <li>Service (worldwide) 16,112,566; Battle deaths 291,557; Other deaths in service 113,842 (non-theater)</li>
+                    </ul>
+
+               </div>
+              
+         <div class="tabs-panel" id="panel26">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel maximus ante. Proin commodo congue ipsum. Curabitur mauris quam, fringilla eu egestas quis, rhoncus nec magna. Praesent neque dolor, placerat ut est at, mattis laoreet justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc metus dolor, interdum eu tellus vitae, imperdiet sollicitudin tellus. Nam eget metus et lorem condimentum vulputate varius eget tellus. Donec ac tincidunt turpis, nec aliquam urna. Donec malesuada tellus sit amet vulputate varius. Morbi eu ultrices urna. Sed aliquam magna risus, ut volutpat massa aliquam sed. Suspendisse a bibendum tellus. Nulla et lacus metus.</p>
+                    
+             <img src="assets/img/worldwarII.jpg">
+                        
+                <p>In a est dolor. Cras sodales libero ac diam porta, semper scelerisque eros tristique. Etiam ut libero et odio aliquet maximus dignissim nec risus. Vivamus non dapibus turpis. Mauris blandit massa ac dolor sagittis, vehicula malesuada elit hendrerit. Phasellus nec lectus vel nisi aliquam imperdiet. Nullam id metus non lacus maximus condimentum. Donec auctor odio tortor, in finibus odio bibendum in. Phasellus quis leo id erat pellentesque vulputate. Sed dignissim, eros eget interdum pulvinar, nunc quam elementum tellus, id pharetra est velit non mi. Etiam nec sem at justo maximus vestibulum. Nunc auctor dictum congue. Integer posuere massa vel malesuada porttitor. Sed elementum condimentum libero, eget tempor ante auctor ut.</p>
+         </div>
+                
+        <div class="tabs-panel" id="panel27">
+                <p>Donec sollicitudin odio nec efficitur sollicitudin. Nullam luctus ultricies pharetra. Maecenas ornare purus id accumsan vehicula. Suspendisse accumsan rutrum felis a fringilla. Vestibulum sed elit aliquam, pellentesque enim vel, auctor diam. Aliquam volutpat feugiat dui vulputate vestibulum. Nulla bibendum tincidunt ex, et sodales nibh molestie quis. Duis at tortor nulla. Mauris viverra sed ante et aliquam. Pellentesque commodo gravida tortor in fermentum. Morbi condimentum nunc et posuere consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam turpis mi, bibendum vitae blandit et, cursus sit amet leo. Nunc ornare luctus pellentesque. In quis condimentum mauris, in facilisis ligula.</p>
+        </div>
+                
+        <div class="tabs-panel" id="panel28">
+                <p>Aliquam dui ante, consectetur vel ornare ac, consequat hendrerit enim. Vestibulum fermentum placerat mauris et fermentum. Quisque varius odio et finibus fermentum. Donec non ante non metus consectetur rutrum. Curabitur blandit, odio vitae rhoncus vulputate, nisl risus fermentum enim, laoreet mollis enim massa at purus. Duis vel nisl egestas, sodales nunc in, ullamcorper dui. Phasellus ut elementum odio, quis venenatis mauris. Ut consectetur a ex quis mattis. Sed mattis tristique ex, a faucibus libero interdum nec. Duis velit orci, suscipit ut mattis vitae, placerat eu velit. In lobortis malesuada nibh. Duis finibus sed nisl eu pulvinar. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam laoreet ut felis eu ornare. Integer suscipit massa pulvinar arcu feugiat, ut rhoncus ipsum pellentesque. Quisque tempus lobortis massa eu molestie.</p>
+        </div>
+        </div>
+                
+        <button class = "close-button" data-close aria-label = "Close reveal" type = "button">
+            <span aria-hidden = "true">×</span>
+         </button>
+      </div>
+            
+        </li>
+          
+          <!-- 7. World War II End -->
+          
+      </ol>
+        <!-- .cd-h-timeline__events -->
+          
+        
+        
+</div>
+
+  </section>
+              
+              
+  <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+  <script src="assets/js/swipe-content.js"></script> <!-- A Vanilla JavaScript plugin to detect touch interactions -->
+  <script src="assets/js/main.js"></script>
+          </div>
+            
+            <div class="callout">
+            
+            
+            <div id='scrollable'>
+<ul id='sortable'>
+<li class='item'>
+    <div class="cd-h-timeline__event-content container">
+            <h4 class="cd-h-timeline__event-title">American Revolution</h4>
+                <em class="cd-h-timeline__event-date">April 19th, 1775</em>
+                    <p class="cd-h-timeline__event-description color-contrast-medium"> 
+                        <a data-open="reveal_modal"><img class="timeline-img" src="assets/img/american-revolution.jpg"></a>
+                    </p>
+          </div></li>
+<li class='item'>
+    <div class="cd-h-timeline__event-content container">
+            <h4 class="cd-h-timeline__event-title">War of 1812</h4>
+            <em class="cd-h-timeline__event-date">April 18th, 1812</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal2"><img class="timeline-img" src="assets/img/warof1812.jpg"></a>
+            </p>
+          </div></li>
+<li class='item'>
+    <div class="cd-h-timeline__event-content container">
+            <h4 class="cd-h-timeline__event-title">Mexican War</h4>
+            <em class="cd-h-timeline__event-date">April 15th, 1846</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal3"><img class="timeline-img" src="assets/img/Overview-Mexican-American-War.jpg"></a>
+            </p>
+          </div></li>
+<li class='item'>
+    <div class="cd-h-timeline__event-content container">
+            <h4 class="cd-h-timeline__event-title">Civil War</h4>
+            <em class="cd-h-timeline__event-date">April 12th, 1861</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal4"><img class="timeline-img" src="assets/img/civilwar.jpg"></a>
+            </p>
+          </div></li>
+<li class='item'>
+    <div class="cd-h-timeline__event-content container">
+            <h4 class="cd-h-timeline__event-title">Spanish-American War</h4>
+            <em class="cd-h-timeline__event-date">April 21st, 1898</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal5"><img class="timeline-img" src="assets/img/spanish-american-war.jpg"></a>
+            </p>
+          </div></li>
+<li class='item'>
+    <div class="cd-h-timeline__event-content container">
+            <h4 class="cd-h-timeline__event-title">World War I</h4>
+            <em class="cd-h-timeline__event-date">July 28th 1914</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal6"><img class="timeline-img" src="assets/img/worldwar1.jpg"></a>
+            </p>
+          </div></li>
+<li class='item'>
+    <div class="cd-h-timeline__event-content container">
+            <h4 class="cd-h-timeline__event-title">World War II</h4>
+            <em class="cd-h-timeline__event-date">September 1st, 1939</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal7"><img class="timeline-img" src="assets/img/worldwarII.jpg"></a>
+            </p>
+          </div></li>
+</ul>
+</div>
+            
+            
+            </div>
+            
+            
+        </div>
+      </div>
+    </div>
+
+
+<script src="assets/js/app.js"></script>
+<script>
+    $(document).ready(function() {
+    $(document).foundation();
+})
+</script>
+</body>
+</html>
