@@ -8,8 +8,22 @@
     <title>Scrollable Timeline</title>
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+
        <script>document.getElementsByTagName("html")[0].className += " js";</script>
   <link rel="stylesheet" href="assets/css/style.css">
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+      <!-- Javascript -->
+       <script>
+        $('#sortable').sortable({
+        axis: 'x',
+        });
+      </script>
+      
+      
   </head>
 <body>
 
@@ -35,8 +49,7 @@
               <br>
               <p>A timeline of America's Wars. Since America united as one nation, this great country surrendered its bravest to liberate the oppressed and ensure freedom for its citizens and future generations. Battle lines were drawn and blood was spilled on U.S. soil and foreign lands. Listed below are the sacrifices made in America’s wars.</p>
 
-              
-              <section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
+<section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
 
     <div class="cd-h-timeline__container container">
       <div class="cd-h-timeline__dates">
@@ -60,11 +73,13 @@
         <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">Next</a></li>
       </ul>
     </div> <!-- .cd-h-timeline__container -->
-
+                  
+ 
     <div class="cd-h-timeline__events">
+        
       <ol>
           <!--1. American Revolution -->
-        <li class="cd-h-timeline__event cd-h-timeline__event--selected text-component">
+        <li class="cd-h-timeline__event cd-h-timeline__event--selected text-component" >
           <div class="cd-h-timeline__event-content container">
             <h2 class="cd-h-timeline__event-title">American Revolution</h2>
                 <em class="cd-h-timeline__event-date">April 19th, 1775</em>
@@ -122,7 +137,7 @@
         <!--1. American Revolution End -->
           
         <!--2. War of 1812 -->
-        <li class="cd-h-timeline__event text-component">
+        <li class="cd-h-timeline__event text-component" >
           <div class="cd-h-timeline__event-content container">
             <h2 class="cd-h-timeline__event-title">War of 1812</h2>
             <em class="cd-h-timeline__event-date">April 18th, 1812</em>
@@ -432,7 +447,7 @@
           
           <!-- 7. World War II -->
 
-        <li class="cd-h-timeline__event text-component">
+        <li class="cd-h-timeline__event text-component" id="1939">
           <div class="cd-h-timeline__event-content container">
             <h2 class="cd-h-timeline__event-title">World War II</h2>
             <em class="cd-h-timeline__event-date">September 1st, 1939</em>
@@ -492,12 +507,88 @@
           <!-- 7. World War II End -->
           
       </ol>
-    </div> <!-- .cd-h-timeline__events -->
+        <!-- .cd-h-timeline__events -->
+          
+        
+        
+</div>
+
   </section>
+              
+              
   <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
   <script src="assets/js/swipe-content.js"></script> <!-- A Vanilla JavaScript plugin to detect touch interactions -->
   <script src="assets/js/main.js"></script>
           </div>
+            
+            <div class="callout">
+            
+            
+            <div id='scrollable'>
+<ul id='sortable'>
+<li class='item'>
+    <div class="cd-h-timeline__event-content container">
+            <h4 class="cd-h-timeline__event-title">American Revolution</h4>
+                <em class="cd-h-timeline__event-date">April 19th, 1775</em>
+                    <p class="cd-h-timeline__event-description color-contrast-medium"> 
+                        <a data-open="reveal_modal"><img class="timeline-img" src="assets/img/american-revolution.jpg"></a>
+                    </p>
+          </div></li>
+<li class='item'>
+    <div class="cd-h-timeline__event-content container">
+            <h4 class="cd-h-timeline__event-title">War of 1812</h4>
+            <em class="cd-h-timeline__event-date">April 18th, 1812</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal2"><img class="timeline-img" src="assets/img/warof1812.jpg"></a>
+            </p>
+          </div></li>
+<li class='item'>
+    <div class="cd-h-timeline__event-content container">
+            <h4 class="cd-h-timeline__event-title">Mexican War</h4>
+            <em class="cd-h-timeline__event-date">April 15th, 1846</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal3"><img class="timeline-img" src="assets/img/Overview-Mexican-American-War.jpg"></a>
+            </p>
+          </div></li>
+<li class='item'>
+    <div class="cd-h-timeline__event-content container">
+            <h4 class="cd-h-timeline__event-title">Civil War</h4>
+            <em class="cd-h-timeline__event-date">April 12th, 1861</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal4"><img class="timeline-img" src="assets/img/civilwar.jpg"></a>
+            </p>
+          </div></li>
+<li class='item'>
+    <div class="cd-h-timeline__event-content container">
+            <h4 class="cd-h-timeline__event-title">Spanish-American War</h4>
+            <em class="cd-h-timeline__event-date">April 21st, 1898</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal5"><img class="timeline-img" src="assets/img/spanish-american-war.jpg"></a>
+            </p>
+          </div></li>
+<li class='item'>
+    <div class="cd-h-timeline__event-content container">
+            <h4 class="cd-h-timeline__event-title">World War I</h4>
+            <em class="cd-h-timeline__event-date">July 28th 1914</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal6"><img class="timeline-img" src="assets/img/worldwar1.jpg"></a>
+            </p>
+          </div></li>
+<li class='item'>
+    <div class="cd-h-timeline__event-content container">
+            <h4 class="cd-h-timeline__event-title">World War II</h4>
+            <em class="cd-h-timeline__event-date">September 1st, 1939</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              <a data-open="reveal_modal7"><img class="timeline-img" src="assets/img/worldwarII.jpg"></a>
+            </p>
+          </div></li>
+</ul>
+</div>
+            
+            
+            </div>
+            
+            
         </div>
       </div>
     </div>
