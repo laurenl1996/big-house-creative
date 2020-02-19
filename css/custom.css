@@ -63,5 +63,23 @@ h3{
   width: 46%;
 }
 
+#scrollable {
+  overflow-x: scroll;
+}
 
+#sortable {
+  display: block;
+  border-width: 6px 0;
+  padding: 4px 0;
+  width:calc(4 * 1050px + 1px); // 1px for dragging
+}
+
+.item {
+  display: block;
+  float: left;
+  height: 100%;
+  width: 600px;
+  box-sizing: border-box; /* keep padding/border inside height/width */
+  background-color: white;
+}
 
