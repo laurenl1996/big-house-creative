@@ -1,4 +1,4 @@
 # big-house-creative
 A working prototype of a horizontal scrolling 'Timeline' with a number of features.
 
-This branch shows adding the content for the timeline, such as images and names of the wars along with the dates. The next step is to look at creating a pop up modal to display more information regarding that specific war.
+Step 3: This brance shows a working timeline with pop ups/modals. When the user clicks on the image under each section of the timeline, a pop up/modal appears giving the user test text and a button to allow them to exit the pop up/modal and return to the timeline.
