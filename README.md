@@ -1,4 +1,4 @@
 # big-house-creative
 A working prototype of a horizontal scrolling 'Timeline' with a number of features.
 
-This branch shows adding the content for the timeline, such as images and names of the wars along with the dates. The next step is to look at creating a pop up modal to display more information regarding that specific war.
+Step 6: This shows a working timeline with pop-up/modals, tabs, arrows and a feature to drag/scroll through the timeline. Unfortuantly I couldn't get the scroll to work on the initial timeline, so I made a small prototype at the bottom of the page to show thow this works. 
